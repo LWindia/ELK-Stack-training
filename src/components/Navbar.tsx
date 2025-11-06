@@ -16,9 +16,16 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center">
-            <a href="#hero" className="text-lg sm:text-xl lg:text-2xl font-bold gradient-text-subtle">
-              ELK Stack Training
+          <div className="flex items-center gap-2 sm:gap-3">
+            <a href="#hero" className="flex items-center gap-2 sm:gap-3">
+              <img 
+                src="/images/LW@4x1.png" 
+                alt="LinuxWorld Logo" 
+                className="h-6 sm:h-7 lg:h-8 w-auto object-contain"
+              />
+              <span className="text-lg sm:text-xl lg:text-2xl font-bold gradient-text-subtle">
+                ELK Stack Training
+              </span>
             </a>
           </div>
 

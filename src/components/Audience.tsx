@@ -35,13 +35,13 @@ const audiences = [
 
 export default function Audience() {
   return (
-    <section className="min-h-screen sm:h-screen bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden flex items-start sm:items-center py-6 sm:py-0 pb-4 sm:pb-0">
+    <section className="sm:h-screen bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden flex items-start sm:items-center py-4 sm:py-0 pb-2 sm:pb-0">
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary-500/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent-500/5 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-4 sm:mb-8 lg:mb-10">
+          <div className="text-center mb-3 sm:mb-8 lg:mb-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 text-balance mb-2 sm:mb-3">
               Who Can Join This Program?
             </h2>
@@ -51,7 +51,7 @@ export default function Audience() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <ul className="space-y-2.5 sm:space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               {audiences.map((audience, index) => {
                 const Icon = audience.icon;
                 return (

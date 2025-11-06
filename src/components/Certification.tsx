@@ -2,7 +2,7 @@ import { Award, TrendingUp, ArrowRight } from 'lucide-react';
 
 export default function Certification() {
   return (
-    <section className="min-h-screen sm:h-screen bg-gradient-to-b from-white to-gray-50 relative overflow-hidden flex items-start sm:items-center py-6 sm:py-12 lg:py-16">
+    <section className="sm:h-screen bg-gradient-to-b from-white to-gray-50 relative overflow-hidden flex items-start sm:items-center py-4 sm:py-12 lg:py-16">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-highlight-500/5 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-primary-500/5 rounded-full blur-[120px]"></div>
@@ -11,7 +11,7 @@ export default function Certification() {
       <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
         <div className="max-w-7xl mx-auto">
           {/* Mobile Layout: Heading first, then image, then content */}
-          <div className="lg:hidden space-y-5">
+          <div className="lg:hidden space-y-4">
             {/* Badge */}
             <div className="inline-block px-2.5 py-1 bg-primary-500/10 border border-primary-500/30 rounded-full">
               <span className="text-primary-600 font-semibold text-[10px]">INDUSTRY RECOGNIZED</span>

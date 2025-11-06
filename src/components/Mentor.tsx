@@ -46,14 +46,18 @@ export default function Mentor() {
 
               <div className="flex flex-wrap gap-2 sm:gap-3 pt-2">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/vimaldaga/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 hover:shadow-glow transition-all duration-300 group"
                 >
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   LinkedIn
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@IIECconnect"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-accent-500 text-white rounded-full font-semibold hover:bg-accent-600 hover:shadow-glow-accent transition-all duration-300 group"
                 >
                   <Youtube className="w-5 h-5 group-hover:scale-110 transition-transform" />
