@@ -25,7 +25,7 @@ const features = [
 
 export default function Experience() {
   return (
-    <section className="h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50 relative overflow-hidden flex items-center py-12 lg:py-16">
+    <section className="min-h-screen sm:h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50 relative overflow-hidden flex items-center py-8 sm:py-12 lg:py-16">
       {/* Animated Particles */}
       <div className="absolute inset-0">
         {[...Array(40)].map((_, i) => (
@@ -45,16 +45,16 @@ export default function Experience() {
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
             {/* Left Content - 60% */}
-            <div className="w-full lg:w-[60%] space-y-5 animate-fade-in-left">
-              <div className="inline-block px-3 py-1.5 bg-primary-500/20 border border-primary-500/50 rounded-full">
-                <span className="text-accent-600 font-semibold text-xs">LEARN BY DOING</span>
+            <div className="w-full lg:w-[60%] space-y-4 sm:space-y-5 animate-fade-in-left">
+              <div className="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 bg-primary-500/20 border border-primary-500/50 rounded-full">
+                <span className="text-accent-600 font-semibold text-[10px] sm:text-xs">LEARN BY DOING</span>
               </div>
 
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight text-balance">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight text-balance">
                 Hands-On,{' '}
                 <span className="gradient-text">
                   Real-World
@@ -62,27 +62,27 @@ export default function Experience() {
                 Learning Experience
               </h2>
 
-              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed text-balance">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed text-balance">
                 Move beyond theory with practical, industry-relevant projects that prepare you for real DevOps and observability challenges.
               </p>
 
-              <div className="space-y-4 pt-2">
+              <div className="space-y-3 sm:space-y-4 pt-2">
                 {features.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
                     <div
                       key={index}
-                      className="flex items-start gap-5 group"
+                      className="flex items-start gap-3 sm:gap-4 lg:gap-5 group"
                       style={{
                         animation: `fade-in-left 0.6s ease-out ${index * 0.1}s backwards`,
                       }}
                     >
-                      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-glow group-hover:scale-110 group-hover:shadow-glow-accent transition-all duration-300">
-                        <Icon className="w-6 h-6 text-white" />
+                      <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-glow group-hover:scale-110 group-hover:shadow-glow-accent transition-all duration-300">
+                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-1">{feature.title}</h3>
-                        <p className="text-gray-600 leading-relaxed text-sm lg:text-base">{feature.description}</p>
+                        <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-1">{feature.title}</h3>
+                        <p className="text-gray-600 leading-relaxed text-xs sm:text-sm lg:text-base">{feature.description}</p>
                       </div>
                     </div>
                   );
@@ -94,19 +94,19 @@ export default function Experience() {
             <div className="w-full lg:w-[40%] relative animate-fade-in-up">
               <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
                 {/* Terminal Header */}
-                <div className="bg-gray-800 px-4 py-3 flex items-center gap-2 border-b border-gray-700">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                <div className="bg-gray-800 px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 border-b border-gray-700">
+                  <div className="flex gap-1.5 sm:gap-2">
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
                   </div>
                   <div className="flex-1 text-center">
-                    <span className="text-gray-400 text-xs font-mono">elasticsearch@elk-stack</span>
+                    <span className="text-gray-400 text-[10px] sm:text-xs font-mono">elasticsearch@elk-stack</span>
                   </div>
                 </div>
 
                 {/* Terminal Content */}
-                <div className="p-4 font-mono text-sm text-green-400 h-[400px] lg:h-[450px] overflow-y-auto bg-gray-950">
+                <div className="p-3 sm:p-4 font-mono text-xs sm:text-sm text-green-400 h-[300px] sm:h-[350px] lg:h-[450px] overflow-y-auto bg-gray-950">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <span className="text-blue-400">$</span>

@@ -134,20 +134,20 @@ export default function Modules() {
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-500/5 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-[100px]"></div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12 xl:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
               Course Curriculum
             </h2>
-            <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               Master Elastic Stack from fundamentals to production deployment
             </p>
           </div>
 
           {/* Modules Grid - 2 Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 lg:gap-6">
             {modules.map((module, index) => {
               const Icon = module.icon;
               const isPrimary = index % 2 === 0;
@@ -164,11 +164,11 @@ export default function Modules() {
                   }}
                 >
                   {/* Header */}
-                  <div className="p-6 lg:p-8">
-                    <div className="flex items-center gap-5 mb-6">
+                  <div className="p-4 sm:p-5 lg:p-6 xl:p-8">
+                    <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-5 lg:mb-6">
                       {/* Module Number */}
                       <div 
-                        className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center font-bold text-white text-lg shadow-md"
+                        className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center font-bold text-white text-base sm:text-lg shadow-md"
                         style={{
                           background: `linear-gradient(135deg, ${primaryColor}, ${darkColor})`,
                         }}
@@ -178,17 +178,17 @@ export default function Modules() {
 
                       {/* Icon */}
                       <div 
-                        className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center"
+                        className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center"
                         style={{
                           backgroundColor: lightBg,
                         }}
                       >
-                        <Icon className="w-6 h-6" style={{ color: primaryColor }} />
+                        <Icon className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: primaryColor }} />
                       </div>
 
                       {/* Title */}
                       <h3 
-                        className="text-xl lg:text-2xl font-bold text-gray-900 flex-1"
+                        className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 flex-1"
                         style={{
                           color: primaryColor,
                         }}
@@ -198,21 +198,21 @@ export default function Modules() {
                     </div>
 
                     {/* Topics List */}
-                    <div className="space-y-3">
+                    <div className="space-y-2 sm:space-y-2.5 lg:space-y-3">
                       {module.topics.map((topic, topicIndex) => (
                         <div 
                           key={topicIndex}
-                          className="flex items-start gap-4"
+                          className="flex items-start gap-3 sm:gap-4"
                         >
-                          <div className="flex-shrink-0 mt-2">
+                          <div className="flex-shrink-0 mt-1.5 sm:mt-2">
                             <div 
-                              className="w-2 h-2 rounded-full"
+                              className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full"
                               style={{
                                 backgroundColor: primaryColor,
                               }}
                             ></div>
                           </div>
-                          <span className="text-base lg:text-lg text-gray-700 leading-relaxed flex-1">
+                          <span className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed flex-1">
                             {topic}
                           </span>
                         </div>
